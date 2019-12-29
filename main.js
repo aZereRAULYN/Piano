@@ -10,7 +10,7 @@ keys.forEach(key => {
 })
 
 document.addEventListener('keydown', e => {
-    if (e.repeat) return
+    if (e.repeat) return //avoid keydown hold repeating sound
     const key = e.key
     const whiteKeyIndex = white_keys.indexOf(key)
     const blackKeyIndex = black_keys.indexOf(key)
